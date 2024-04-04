@@ -3,6 +3,7 @@ import useLocation from "../rfs-router/hooks/useLocation";
 import useNavigate from "../rfs-router/hooks/useNavigate";
 import useResolvedPath from "../rfs-router/hooks/useResolvedPath";
 import * as React from "react";
+import useHref from "../rfs-router/hooks/useHref.js";
 
 const isModifiedEvent = (event) => {
   return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);

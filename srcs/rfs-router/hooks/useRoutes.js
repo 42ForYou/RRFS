@@ -31,8 +31,6 @@ const RenderErrorBoundary = ({ location, error, component, children }) => {
 const RenderedRoute = ({ match, routeContext, children }) => {
   const dataStaticRouterContext = React.useContext(DataStaticRouterContext);
 
-  console.log("RenderedRoute", match, routeContext, children);
-
   if (dataStaticRouterContext && match.route.errorElement) {
     dataStaticRouterContext._deepestRenderedBoundaryId = match.route.id;
   }
@@ -124,8 +122,6 @@ const useRoutes = (routes, locationArg) => {
     parentMatches,
     dataRouterStateContext || undefined
   );
-
-  console.log(renderedMathches);
 
   if (locationArg) {
     return (
