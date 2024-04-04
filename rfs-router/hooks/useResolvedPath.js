@@ -1,7 +1,6 @@
-import { resolveTo } from "@remix-run/router";
+import { resolveTo, getPathContributingMatches } from "../../router/index.js";
 import useLocation from "./useLocation";
 import * as React from "react";
-import getPathContributingMatches from "../../shared/getPathContributingMatches.js";
 import { RouteContext } from "../context.js";
 
 const useResolvedPath = (to, { relative } = {}) => {

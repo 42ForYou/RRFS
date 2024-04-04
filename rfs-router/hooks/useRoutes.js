@@ -1,4 +1,4 @@
-import { joinPaths, matchRoutes, parsePath, Action as NavigationType } from "@remix-run/router";
+import { joinPaths, matchRoutes, parsePath, Action as NavigationType } from "../../router/index.js";
 import useLocation from "./useLocation";
 import { DataRouterStateContext, DataStaticRouterContext, RouteContext, RouteErrorContext } from "../context";
 import * as React from "react";

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContext } from "../context.js";
 import useResolvedPath from "./useResolvedPath.js";
-import { joinPaths } from "@remix-run/router";
+import { joinPaths } from "../../router/index.js";
 
 const useHref = (to, { relative } = {}) => {
   const { basename, navigator } = React.useContext(NavigationContext);

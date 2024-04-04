@@ -1,8 +1,7 @@
 import { NavigationContext, RouteContext } from "../context";
 import useLocation from "./useLocation";
 import * as React from "react";
-import { joinPaths, resolveTo } from "@remix-run/router";
-import getPathContributingMatches from "../../shared/getPathContributingMatches";
+import { joinPaths, resolveTo, getPathContributingMatches } from "../../router/index.js";
 
 const useNavigate = () => {
   const { basename, navigator } = React.useContext(NavigationContext);

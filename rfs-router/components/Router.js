@@ -1,4 +1,4 @@
-import { parsePath, stripBasename, Action as NavigationType } from "@remix-run/router";
+import { parsePath, stripBasename, Action as NavigationType } from "../../router/index.js";
 import { LocationContext, NavigationContext } from "../context";
 import * as React from "react";
 

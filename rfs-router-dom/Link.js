@@ -1,4 +1,4 @@
-import { createPath } from "@remix-run/router";
+import { createPath } from "../router/index.js";
 import useLocation from "../rfs-router/hooks/useLocation";
 import useNavigate from "../rfs-router/hooks/useNavigate";
 import useResolvedPath from "../rfs-router/hooks/useResolvedPath";
